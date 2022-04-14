@@ -30,120 +30,21 @@ html {
 |
 |
 */
-
-.header__logo {
-    display: flex;
-    justify-content: center;
-    width: auto;  
-}
-
-.header__nav {
+header {
     background-color: lightseagreen;
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;   
 }
-.header__nav li {
+
+.navbar-collapse {
+    flex-grow: inherit;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.5rem;
     margin: 15px;
-}
-
-.header__nav li a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: x-large;
-    text-transform: uppercase;
-    color: white;
-}
-
-.active {
-    color: black !important;
+    
 }
 
 /* Fin Seccion Nav */
-
-
-/* Galeria de fotos */
-
-#galeria__banner {
-    display: grid;
-    
-    
-}
-
-#galeria__banner img {
-    width: 100%;
-    padding: 20px;
-    border-radius: 30px;
-    
-
-}
-
-
-#galeria__banner img:nth-child(1) {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    transition: width 1s
-    
-}
-
-#galeria__banner img:nth-child(1):hover {
-    width: 1000px;
-}
-
-#galeria__banner img:nth-child(2) {
-    grid-column: 2/2;
-    grid-row: 1/3;
-    transition: width 1s
-}
-
-#galeria__banner img:nth-child(2):hover {
-    width: 1500px;
-    z-index: 1;
-}
-
-#galeria__banner img:nth-child(3) {
-    grid-column: 2/2;
-    grid-row: 2/2;
-    transition: width 1s
-}
-
-#galeria__banner img:nth-child(3):hover {
-    width: 1500px;
-}
-
-@media screen and (max-width: 500px) {
-    #galeria__banner {
-        display: flex;
-        flex-direction: column;
-    }
-    .foto-prod {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Fin galeria de fotos */
-
-
-.mas-vendidos {
-    display: inline;
-    width: 25%;
-    margin: 30px;
-}
-
-.foto-prod {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-}
-
-.foto-prod img {
-    border-radius: 20px
-}
-
 
 .titulo-productos {
     text-align: center;
@@ -151,6 +52,19 @@ html {
     color: white;
     background-color: lightseagreen;
 }
+
+.mas-vendidos {
+    display: flex;
+    margin: 40px;
+    justify-content: space-between; 
+}
+
+@media screen and (max-width: 700px)  {
+    .mas-vendidos {
+        flex-direction: column;
+    }
+}
+
 
 .footer {
     text-align: center;
@@ -160,100 +74,7 @@ html {
 
 /* fin index.html */
 
-/* productos */
 
-
-.almohadillas {
-    display: flex;
-    gap: 350px;
-}
-.almohadillas img {
-    display: flex;
-    border-radius: 20px;
-    margin-left: 30px;
-    width: 30%;
-    transition: width 1s;
-}
-
-.almohadillas img:hover {
-    width: 600px;
-}
-
-.almohadillas p {
-    display: flex;
-    font-size: x-large;
-    align-items: center;
-}
-
-.texto-productos {
-    text-align: center;  
-}
-
-.sales {
-   display: flex;
-   flex-direction: row-reverse;
-   gap: 350px;
-}
-
-.sales img {
-    display: flex;
-    border-radius: 20px;
-    margin-right: 30px;
-    width: 30%;
-    transition: width 1s
-}
-
-.sales img:hover {
-    width: 600px;
-}
-
-.sales p {
-    display: flex;
-    font-size: x-large;
-    align-items: center; 
-}
-
-
-.cremas {
-    display: flex;
-    gap: 350px;
-}
-
-.cremas img {
-    display: flex;
-    border-radius: 20px;
-    width: 30%;
-    transition: width 1s
-}
-
-.cremas img:hover {
-    width: 600px;
-}
-
-.cremas p {
-    display: flex;
-    font-size: x-large;
-    align-items: center;
-}
-
-@media screen and (max-width: 500px) {
-   .almohadillas {
-       display: flex;
-       flex-direction: column;
-   }
-   .sales {
-    display: flex;
-    flex-direction: column;
-   }
-   .cremas {
-    display: flex;
-    flex-direction: column;
-   }
-}
- 
-
-
-/* Fin seccion productos */
  
 .gabinete {
     display: flex;
@@ -327,6 +148,11 @@ html {
     align-items: center;
     font-size: x-large;
 
+}
+.tipos-de-masaje {
+    font-size: large;
+    margin: 30px;
+    
 }
 
 @media screen and (max-width: 500px) {
