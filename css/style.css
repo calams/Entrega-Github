@@ -74,7 +74,7 @@ html {
 #galeria__banner img {
     width: 100%;
     padding: 20px;
-    border-radius: 100px;
+    border-radius: 30px;
 }
 
 #galeria__banner img:nth-child(1) {
@@ -121,15 +121,15 @@ html {
 }
 
 .foto-prod img {
-    border-radius: 50px
+    border-radius: 20px
 }
 
 
 .titulo-productos {
     text-align: center;
     font-size: 50px;
-    border: solid 5px;
-    border-radius: 50px;
+    border: solid 3px white;
+    color: white;
     background-color: lightseagreen;
 }
 
