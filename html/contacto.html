@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    
+    <main>
+        <header>
+
+            <div class="header__logo">
+                <img src="../img/logo2.png"  alt="logo">
+            </div>
+
+            <nav>
+                <ul class="header__nav">
+
+                    <li><a href="../index.html">Home</a></li>
+    
+                    <li><a href="./productos.html">Productos</a></li>
+                    
+                    <li><a href="./servicios.html">Servicios</a></li>
+    
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+    
+                    <li><a href="#" class="active">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+        
+        </header>
+        <div class="main">
+            <h2 class="contacto"><strong>Contacto</strong></h2>
+
+            <form action="enviar.php" method="get" enctype="text/plain"> 
+            <fieldset class="form1">
+                <legend>Datos personales</legend>
+            <div>
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email de contacto</label>
+                <input type="text" id="Email" name="mail" placeholder="Ingrese su Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="phone">Telefono de contacto</label>
+                <input type="password" id="phone" placeholder="Ingrese su telefono" required>
+            </div>
+            </fieldset>
+            <br>
+
+                <h3 class="motivo">Motivo de consulta / Sugerencias</h3>
+            <div class="area-consulta">
+                <label for="multi"></label>
+                <textarea name="" id="multi" cols="50" rows="15"></textarea>
+            </div>
+            <br>
+            <div class="opciones">
+                <select name="consulta" id="consulta">
+                    <option value="0">Seleccione el Motivo</option>
+                    <option value="1">Consulta</option>
+                    <option value="2">Sugerencias</option>
+                </select>
+            </div>
+            <br>
+            <div class="botones">
+                <input type="reset" value="Borrar todo">
+                <input type="submit" value="Enviar Ahora">
+            </div>
+        </form>
+    </div>
+    </main>
+
+    <footer id="pie-pagina" class="footer">
+        <p><strong>Telefono:</strong> XX-XXXX-XXXX <strong>Instagram:</strong> @soul.homespa  <strong>Email:</strong> contacto@soulhomespa.com</p>
+    </footer>
+</body>
+</html>
