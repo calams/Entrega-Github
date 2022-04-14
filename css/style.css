@@ -145,7 +145,6 @@ html {
 .titulo-productos {
     text-align: center;
     font-size: 50px;
-    border: solid 3px white;
     color: white;
     background-color: lightseagreen;
 }
@@ -170,6 +169,7 @@ html {
     border-radius: 20px;
     margin-left: 30px;
     width: 30%;
+    transition: width 1s;
 }
 
 .almohadillas img:hover {
@@ -399,8 +399,28 @@ html {
     margin: 20px;
 }
 
+.input {
+    width: 300px;
+    text-align: center;
+    
+}
+
+.texto-centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form1 {
     margin: 20px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+
+.form2 {
+    width: 300px;
+    font-size: x-large;
 }
 
 .motivo {

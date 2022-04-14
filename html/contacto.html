@@ -35,24 +35,28 @@
         
         </header>
         <div class="main">
+
             <h2 class="contacto"><strong>Contacto</strong></h2>
 
             <form action="enviar.php" method="get" enctype="text/plain"> 
             <fieldset class="form1">
                 <legend>Datos personales</legend>
-            <div>
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Email de contacto</label>
-                <input type="text" id="Email" name="mail" placeholder="Ingrese su Email" required>
-            </div>
-            <br>
-            <div>
-                <label for="phone">Telefono de contacto</label>
-                <input type="password" id="phone" placeholder="Ingrese su telefono" required>
+
+            <div class="texto-centrado">
+                <div class="form2">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required class="input">
+                </div>
+                <br>
+                <div class="form2">
+                    <label for="email">Email de contacto</label>
+                    <input type="text" id="Email" name="mail" placeholder="Ingrese su Email" required class="input">
+                </div>
+                <br>
+                <div class="form2">
+                    <label for="phone">Telefono de contacto</label>
+                    <input type="password" id="phone" placeholder="Ingrese su telefono" required class="input">
+                </div>
             </div>
             </fieldset>
             <br>
